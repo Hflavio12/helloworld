@@ -1,0 +1,15 @@
+# helloworld/docker-compose.yml
+version: '3.8'
+
+services:
+  web_app:
+    build:
+      context: . # Usa il Dockerfile nella directory corrente
+    container_name: flask-hello-world
+    restart: always
+    ports:
+      - "3000:5000" # Mappa Host:3000 a Container:5000
+    environment:
+      # Imposta l'ambiente in modalità sviluppo, se necessario
+      FLASK_ENV: development
+    # NON è necessario specificare volumi per questa app semplice
