@@ -1,0 +1,1 @@
+print("Questo è un comando di stampa")
