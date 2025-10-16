@@ -1,4 +1,5 @@
 # Importa la funzione Flask da flask
+# Secondo commento
 from flask import Flask
 
 # Crea un istanza della classe Flask
